@@ -1,5 +1,3 @@
-![logo](/template/res/logo-neon.png)
-
 # Movie Database
 
 A movie database made to practice API calls, DOM-manipulation, modules and JavaScript in general.
