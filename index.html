@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Movie Database</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Road+Rage&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://kit.fontawesome.com/f300007e95.js" crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="content-wrapper header__flex">
+        <a href="index.html"><img class="header__logo" src="./res/icons/logo-neon.svg" alt="logotype"/></a>    
+        <a href="./favorites.html"><img class="fav__logo" id="favBtn" src="./res/icons/neonstar.svg" alt="favorites"></a>
+      </div>
+    </header>
+
+    <section class="search">
+      <form class="search__form" id="searchForm">
+        <input class="search__input" id="searchInput" type="text" aria-label="Search"/>
+        <button class="search__form-btn" id="searchBtn">Search</button>
+      </form>
+    </section>
+    
+    <section class="caroussel">
+      <div class="content-wrapper">
+        <section class="trailers">
+          <img
+            src="./res/icons/arrow-left.svg"
+            alt="left navigation arrow"
+            class="trailers__arrow trailers__arrow--left"
+            data-direction="left"
+          />
+          <img
+            src="./res/icons/arrow-right.svg"
+            alt="right navigation arrow"
+            class="trailers__arrow trailers__arrow--right"
+            data-direction="right"
+          />
+          <section class="trailers__container"></section>
+        </section>
+      </div>
+    </section>
+
+    <section class="recommended">
+      <div class="content-wrapper">
+        <h2 class="popular-title">Recommended</h2>
+        <section class="card-container" id="cardCont"></section>
+      </div>
+    </section>
+
+  </body>
+</html>
